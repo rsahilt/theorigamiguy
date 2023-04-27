@@ -1,0 +1,532 @@
+/*margin and padding set so that the body appears in the middle of the viewport*/
+body{
+  margin: 0 auto;
+  padding: 0;
+/*  background-color: #f2f2f2;*/
+  background-color: #ffffff;
+}
+
+/*
+margin and padding is set so that the wrapper appears in the middle of the viewport. max-width of the wrapper is 
+960px
+*/
+#wrapper{
+  margin: 0 auto;
+  padding-top: 125px;
+  max-width: 960px;
+/*  background-color:white;*/
+/*  box-shadow: 0 7px 8px rgba(0,0,0,0.3);*/
+}
+
+/*header is given max-width of 960px, height of 125px and background color and box shadow*/
+header{
+  height: 125px;
+  background: #fff;
+  padding: 0;
+  box-shadow: 0 7px 8px rgba(0,0,0,0.3);
+  z-index: 10;
+  margin-bottom: 3px;
+  position: fixed;
+  width: 100vw;
+}
+
+#inner-header{
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+  height: 125px;
+}
+
+
+/*div to contain the logo is styled and floated to left*/
+#logo{
+  width: 30%;
+  float: left;
+}
+      
+/*styling the div containing the logo image with css transition*/
+#logo-img{
+  width: 42%;
+  float: left;
+}
+      
+      
+/*styling the text beside the logo with a special font-family and letter spacing to make it look good*/
+#logo-text{
+  width: 58%;
+  height: inherit;
+  float: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding-top: 4px;    
+}
+      
+/*image is floated to the left*/
+header #logo img{
+  float: left;
+}
+      
+/*title text is styled*/
+header #logo span{
+  float: left;
+  font-size: 2.15em;
+}
+
+/*nav element for navigation bar is styled */
+nav{
+  width: 70%;
+  height: inherit;
+  float: left;
+  position: relative;
+  bottom: -3px;
+}
+      
+/*the list for the navigation is styled appropriately*/
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  padding: 70px 20px 0 0;
+}
+      
+/*the list is displayed as block so we can give the following block css properties*/
+nav ul li{
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  padding: 12.7px 7px 15.2px 7px;
+  cursor: pointer;
+}
+
+/*
+the links in the navigation are styled and transition is used. transition gives the change in background color
+and the color
+*/
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 12.7px 12px 15.2px 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+      
+/*this a.active represents the active page in the nav*/
+nav ul li a.active{
+  background-color: #ff4c4c;
+  color: white;
+}
+      
+/*stylings made on hovering the li in the nav*/
+nav ul li a:hover{
+  background-color: #ff4c4c;
+  color: #fff;
+}
+
+/*
+this is the div for the mobile navigation which is style for mobile view. the position is relative so that the list
+under this can be positioned absolute or as desired
+*/
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  width: 40px;
+  display: none;
+}
+
+.hamburger .bar{
+  content: '';
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  margin-top: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger:hover,
+.hamburger .bar:hover{
+  cursor: pointer;
+}
+
+.hamburger:hover .bartop{
+  transform: translate(0px, 11px) rotate(-135deg);
+}
+
+.hamburger:hover .barmid{
+  transform: translate(-18px, 0);
+  opacity: 0;
+}
+
+.hamburger:hover .barbottom{
+  transform: translate(0px, -11px) rotate(135deg);
+}
+
+
+/*the section is given width of 100% of the wrapper's width as it is tha parent*/
+section{
+  max-width: 100%;
+  background-color: #fff;
+  padding-bottom: 1px;
+}
+
+/*the image slider div, containing the image inherits the width from its parent div , that is wrapper*/
+.imageslider{
+  max-width: inherit;
+  background-color: white;
+}
+
+/*the image is goven max-width of 100% and height is set to auto so to adjust it as the page size grows or shrinks*/
+.imageslider img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+this div acts as textbox and positioned absolute inorder to move according to the need. box shadow is used
+for 3d effect. z-index 2 is given to put this div above the image
+*/
+.authortext{
+  margin: 0 auto;
+  width: 98%;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 200;
+}
+
+/*the blockquote has padding of 10px all around*/
+blockquote{
+  padding: 10px;
+}
+
+.hrline{
+  width: 90%;
+  color: #e5e0e2;
+}
+
+.homeh1{
+  text-align: center;  
+  margin-bottom: 0;
+}
+
+span.subtitle{
+  display: flex;
+  justify-content: center;
+  color: #99838e;
+/*  text-shadow: 2px 2px 2px rgba(0,0,0, 0.6);*/
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.container-images{
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+/*  margin: 0 0 20px 0;*/
+/*  background-color: #fff;*/
+  padding-bottom: 40px;
+  padding-top: 10px;
+/*  box-shadow: 0 7px 8px rgba(0,0,0,0.3);*/
+}
+
+.img-box{
+  width: 33%;
+  margin: 0 10px;
+}
+
+
+.container-images img{
+  
+  transition: all 0.2s ease-in-out;
+  background: #000;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.7);
+  max-width: 100%;
+  height: auto;
+}
+
+.container-images img:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+footer{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: linear-gradient(#08417a,#031b34);
+  float: left;
+  display: flex;
+  flex-direction:column;
+  color: white;
+  box-shadow: 0 7px 8px rgba(0,0,0,0.3);
+}
+
+#inner-footer{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-contents{
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-left-resp{
+  display: flex;
+  flex-direction: row;
+}
+.footer-contents .footer-left-resp p.left-footer-cont{
+  padding: 10px 0 0 25px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 200;
+  color: #d6d0db;
+}
+
+.footer-contents .footer-left-resp p.mid-footer-cont{
+  padding: 10px 0 0 100px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 200;
+  color: #d6d0db;
+}
+
+.footer-contents .footer-right-resp p.right-footer-cont{
+  padding: 10px 0 0 100px;
+}
+
+.footer-copyright{
+  background-color: #081518;
+  float: left;
+  width: 100%;
+}
+
+#inner-copyright{
+  margin: 0 auto;
+  max-width: 960px;
+  color: #d6d0db;
+}
+
+.footer-copyright p{
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+
+iframe{
+  width: 400px;
+  height: 250px;
+}
+
+#last_modified{
+  margin-left: 25px;
+  padding-bottom: 10px;
+  text-align: right;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+
+/*Fonts in every page*/
+section,
+.section-about,
+.portfoliosection{
+  font-family: 'Heebo', sans-serif;
+  font-weight: 200;
+}
+
+
+/*
+///////////////////////////////////////////////////////////////////////////
+//////////////////////////ABOUT.HTML///////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.image-div{
+  width: 230px;
+  height: 230px;
+  border-radius: 51%;
+  background-color: black;
+  margin: 2% auto 0 auto;
+  padding: 0;
+  box-shadow: 3px 4px 4px rgba(0,0,0,0.5);
+}
+
+.dpimg{
+  border-radius: 50% !important;
+}
+
+p.abouttxt{ 
+  padding: 16px;  
+}
+
+section.section-about,
+section.section-contact{
+  background-color: #FFF;
+  margin:0;
+  padding-bottom: 1px; /*TO FIX THE SPACING BETWEEN THE DIV (ALTERNATE SOLUTION)*/
+}
+
+
+/*
+///////////////////////////////////////////////////////////////////////////
+//////////////////////////CONTACT.HTML///////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+*/
+section.section-contact{
+  display: flex;
+  flex-direction: row;
+}
+
+.content-form{
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto 50px auto;
+  background-color: #ffff;
+  box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.8);
+  border-radius: 15px;
+}
+
+.image-envelope{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  background-color: #e52226;
+  border-radius: 15px 0 0 15px;
+}
+
+.image-envelope img{
+  margin-top: 44%;
+}
+
+form{
+  padding-bottom: 10px;
+  
+}
+.form-div{
+  width: 55%;
+  padding-left: 20px;
+  border-radius: 0 15px 15px 0;
+  
+}
+
+form input,
+textarea{
+  padding: 10px;
+}
+
+form input[type="email"],
+form input[type="tel"],
+form input[type="text"],
+form input[type="password"],
+textarea
+{
+  width: 306px;
+  border-collapse: collapse;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+form input[type="submit"],
+form input[type="reset"]
+{
+  padding: 10px;
+  background-color: #198c19;
+  border-collapse: collapse;
+  border: 1px;
+  padding: 10px 40px;
+  color: white;
+}
+
+form input[type="reset"]
+{
+  background-color: #1c80bd;
+}
+
+
+form input[type="submit"]:hover{
+  cursor: pointer;
+  background-color: #007300;
+}
+form input[type="reset"]:hover{
+  cursor: pointer;
+  background-color: #15608e;
+}
+
+h1.removemargin{
+  margin-bottom: 4px;
+}
+
+.activelabel:focus{
+  background-color: #f4f6fa;
+}
+
+/*
+///////////////////////////////////////////////////////////////////////////
+//////////////////////////Portfolio.HTML///////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+*/
+.portfoliosection{
+  height: 300px;
+}
+.portfoliosection img{
+  margin: 70px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: inf_rot 5s linear infinite;
+  animation: inf_rot 5s linear infinite;
+}
+
+.portfoliosection p{
+  text-align: center;
+}
+
+
+/*
+///////////////////////////////////////////////////////////////////////////
+//////////////////////////media.HTML///////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.news{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 40px;
+  padding: 5px 20px;
+}
+
+.nextnews,
+.nextnews1{
+  margin-top: 20px;
+}
+
+.nextnews1{
+  margin-bottom: 30px;
+}
+
+span.readmore{
+  display: flex;
+  justify-content: flex-end;
+}
+.newsdate{
+  color: #087474;
+}
+
+.publication{
+  color: #529d9d;
+}
+
+
+
+
+

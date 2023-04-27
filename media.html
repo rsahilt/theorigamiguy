@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    
+    <!--meta tag for device responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Capstone Project</title>
+    
+    <!--link to css styslesheet-->
+    <link rel="stylesheet" type="text/css" href="styles/desktop.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    
+
+<!--    links for google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Lato:wght@400&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    
+  </head>
+  
+  <!--                     (^_^)
+  /////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\             
+  //////////////////////////   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\                                                        //
+  //               Submitted By: Sahil Rajbhandari          \\
+  \\               Tutor: Brent Scott                       //
+  //               Final Project - HTML CAPSTONE PROJECT    \\
+  \\               Due Date: MAY 9, 2023                    //
+  //                                                        \\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\   //////////////////////////////
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\ /////////////////////////////// 
+  -->    
+  
+  <body>
+    <header> <!--a child class within the header which is of 960px-->
+     
+      <div id="inner-header">
+       
+        <div id="logo"> <!--div for logo and the title-->
+         
+          <div id="logo-img"> <!--div containing image of the page-->
+              <!--logo that appers on desktop and ipad version-->
+<!--
+              <img src="images/logonobg1.png" 
+                   alt="The origami guy logo" 
+                   title="Website Logo"> 
+-->
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/logo-768.png" 
+                      width="90" 
+                      height="90"
+                      >
+                      
+              <img src="images/logonobg1.png" 
+                   width="125" 
+                   height="125" 
+                   alt="website logo">
+            </picture>      
+            
+          </div> <!--div containing the image is closed-->                                                                     
+          
+          
+          <div id="logo-text"> <!--div containing the title text-->
+            <span> <!--text-->
+              THE<br>
+              ORIGAMI<br>
+              GUY<br>
+            </span> <!--end if text/span-->
+          </div> <!--div containing the title text is closed-->
+          
+        </div> <!--div for the logo and the text is closed-->
+        
+        <nav>
+          <div class="hamburger">
+            <!--image of hamburger is used-->
+          <!--<img src="images/hamburger.png" alt="hamburger icon">-->
+            <div class="bar bartop"></div>
+            <div class="bar barmid"></div>
+            <div class="bar barbottom"></div>
+          </div> <!--hamburger menu closed-->
+
+          <ul> <!--unordered list with links are created-->
+            <li><a href="index.html" title="Home">Home</a></li> <!--class used to specify the opened page-->
+            <li><a href="about.html" title="About">About</a></li>
+            <li><a href="media.html" class="active" title="Media">Media</a></li>
+            <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+            <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+          </ul> <!--end of navigation lists-->
+        </nav> <!--nav element closed-->
+        
+      </div><!--End of inner header-->
+      
+    </header> <!--header with width 960px is closed--> 
+    <!--wrapper div that contains the whole webpage-->
+    <div id="wrapper">
+  
+      <section> <!--section begins here-->
+      
+        <div class="news">
+          <h1>Publishes</h1>
+          <span class="newsdate">June 5, 2023</span> <br>
+          <span class="publication">Smart Family Magazine</span>
+          <p>
+            &ldquo;As I was growing up, I was very impatient within myself and I couldn’t really concentrate well on things.
+            Through origami, my patience started growing and my concentration level increased with it. Origami has 
+            now become like a form of meditation to me. For instance, whenever I get stressed or frustrated, 
+            it is the one thing that calms me down. Normally, every time I make something new, my entire 
+            intention behind it is to give it to friends and family as a gift, keeping in mind what they would like. 
+            I don’t personally own all of my models at the moment.&rdquo;
+          </p>
+          <a href="https://www.smartfamily.com.np/true-story/why-i-love-origami" target="_blank"><span class="readmore">Read More</span></a>
+          <hr>
+        </div>    
+           
+        <div class="news nextnews">
+          <span class="newsdate">July 14, 2020</span> <br>
+          <span class="publication">The Kathmandu Post</span>
+          <p>
+            For him, making origami is like meditating. &ldquo;When I start folding papers at night after finishing all 
+            of my work for the day, all of my stress gets relieved,” says Rajbhandari. “As someone who started 
+            origami as a hobby years ago, now it has become a part of me. When I fold papers with a motive of making 
+            something, it feels like I am meditating, focusing my whole energy with full discipline, to create 
+            something that becomes a medium of my expression.&rdquo;
+          </p>
+          <a href="https://kathmandupost.com/arts/2020/07/14/how-this-self-taught-artist-is-making-origami-cool" target="_blank"><span class="readmore">Read More</span></a>
+          <hr>
+        </div>    
+        
+        <div class="news nextnews">
+          <span class="newsdate">December 9, 2019</span> <br>
+          <span class="publication">Embassy of Japan in Nepal</span>
+          <p>
+            &ldquo;Origami&rdquo;, the paper fold artworks, Nepali artists, Ms. Yamuna Shrestha and Mr. Saugat Rajbhandari 
+            showcased their beautiful origami 3D art works. Origami workshops by two artists were held for local 
+            students. More than 400 students participated and learned about Japanese origami art. The exhibition 
+            attracted visitors to enjoy traditional Japanese paintings and origami art. During the 14-day of 
+            exhibition, about 800 art lovers visited our embassy hall.
+          </p>
+          <a href="https://www.np.emb-japan.go.jp/itpr_ja/00_000361.html" target="_blank"><span class="readmore">Read More</span></a>
+          <hr>
+        </div>    
+        
+        <div class="news nextnews1">
+          <span class="newsdate">May 24, 2019</span> <br>
+          <span class="publication">myRepublica</span>
+          <p>
+            &ldquo;I thought 3D models were beautiful. I suddenly felt an urge to make them so I did,&rdquo; he says. In the 
+            beginning, the folds of his paper triangles were clumsy and wrongly proportioned. He needed thousands 
+            of triangles so it did seem like an impossible dream when starting out and he also found it difficult 
+            to stay put at a certain place for long. &ldquo;With the 3D models you don’t see the final product right from 
+            the beginning. A lot of work goes into making the paper triangles. It got really frustrating in the 
+            beginning,&rdquo; he admits.
+          </p>
+          <a href="https://myrepublica.nagariknetwork.com/news/in-between-the-folds/" target="_blank"><span class="readmore">Read More</span></a>
+        </div>                   
+            
+      </section> <!--section closed-->
+      
+    </div> <!--wrapper div closed-->
+    
+    <footer>
+     
+      <div id="inner-footer">
+       
+        <div class="footer-contents">
+         
+          <div class="footer-left-resp">
+            <p class="left-footer-cont">
+              Contact Me<br><br>
+              Saugat Rajbhandari<br>
+              Kathmandu, NEPAL<br><br>
+              Tel: +977-9876543210<br><br>
+              theorigamiguy@gmail.com<br><br>
+              Connect with me:<br>
+              <img src="images/fb-icon.png" alt="facebook icon">
+              <img src="images/insta-icon.png" alt="instagram icon">
+              <img src="images/twitter-icon.png" alt="twitter icon">
+            </p>  
+
+
+            <p class="mid-footer-cont">
+              Coded Using<br><br>
+              HTML 5<br>
+              CSS 3<br>
+              CSS Transitions<br>
+              CSS Transforms<br>
+              CSS Animations<br>
+              HTML Validator<br>
+              CSS Validator
+            </p>  
+          </div>
+
+          <div class="footer-right-resp">
+            <p class="right-footer-cont">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d528.9750958167673!2d85.34364104862699!3d27.65777200636032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb175804d46333%3A0x407a3f6860e99df2!2sImadol%2C%20Mahalaxmi%2C%20Nepal!5e0!3m2!1sen!2sca!4v1682186093481!5m2!1sen!2sca" 
+                      style="border:0;" 
+                      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>  
+          </div>
+
+        </div>
+
+        <div class="footer-right"></div>
+
+        <div id="last_modified">
+          <script>
+            document.scripts[document.scripts.length-1].parentNode.innerHTML = "Last Modified: " + document.lastModified;
+          </script>
+        </div>
+        
+      </div><!--End of inner-footer-->  
+      
+      <div class="footer-copyright">
+        <div id="inner-copyright"> <!--inner footer opened-->
+          <p>
+            <sup>&copy;</sup>Copyright 2023. &nbsp;The Origami Guy. &nbsp;All Rights Reserved
+          </p> 
+        </div> <!--inner copyright closed--> 
+      </div> <!--footer-copyright closed-->  
+      
+    </footer>
+  </body> <!--body closed-->
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    
+    <!--meta tag for device responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Capstone Project</title>
+    
+    <!--link to css styslesheet-->
+    <link rel="stylesheet" type="text/css" href="styles/desktop.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    
+
+<!--    links for google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Lato:wght@400&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  </head>
+  
+  <!--                     (^_^)
+  /////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\             
+  //////////////////////////   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\                                                        //
+  //               Submitted By: Sahil Rajbhandari          \\
+  \\               Tutor: Brent Scott                       //
+  //               Final Project - HTML CAPSTONE PROJECT    \\
+  \\               Due Date: MAY 9, 2023                    //
+  //                                                        \\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\   //////////////////////////////
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\ /////////////////////////////// 
+  -->    
+  
+  <body>
+    <header> <!--a child class within the header which is of 960px-->
+     
+      <div id="inner-header">
+       
+        <div id="logo"> <!--div for logo and the title-->
+         
+          <div id="logo-img"> <!--div containing image of the page-->
+              <!--logo that appers on desktop and ipad version-->
+<!--
+              <img src="images/logonobg1.png" 
+                   alt="The origami guy logo" 
+                   title="Website Logo"> 
+-->
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/logo-768.png" 
+                      width="90" 
+                      height="90"
+                      >
+                      
+              <img src="images/logonobg1.png" 
+                   width="125" 
+                   height="125" 
+                   alt="website logo">
+            </picture>      
+            
+          </div> <!--div containing the image is closed-->                                                                     
+          
+          
+          <div id="logo-text"> <!--div containing the title text-->
+            <span> <!--text-->
+              THE<br>
+              ORIGAMI<br>
+              GUY<br>
+            </span> <!--end if text/span-->
+          </div> <!--div containing the title text is closed-->
+          
+        </div> <!--div for the logo and the text is closed-->
+        
+        <nav>
+          <div class="hamburger">
+            <!--image of hamburger is used-->
+          <!--<img src="images/hamburger.png" alt="hamburger icon">-->
+            <div class="bar bartop"></div>
+            <div class="bar barmid"></div>
+            <div class="bar barbottom"></div>
+          </div> <!--hamburger menu closed-->
+
+          <ul> <!--unordered list with links are created-->
+            <li><a href="index.html" title="Home">Home</a></li> <!--class used to specify the opened page-->
+            <li><a href="about.html" class="active" title="About">About</a></li>
+            <li><a href="media.html" title="Media">Media</a></li>
+            <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+            <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+          </ul> <!--end of navigation lists-->
+        </nav> <!--nav element closed-->
+        
+        
+      </div><!--End of inner header-->
+      
+    </header> <!--header with width 960px is closed--> 
+    <!--wrapper div that contains the whole webpage-->
+    <div id="wrapper">
+      
+      <section class="section-about"> <!--section begins here-->
+        <div class="image-div">
+          <img src="images/aboutimage.jpg" alt="Artist Image" class="dpimg">
+        </div>  
+        <p class="abouttxt"> I was never an exceptional artist but weighed down by constant disappointments I looked 
+          for a way out, I wanted to engage in and do something creative and constructive. I stumbled upon paper folding art 
+          in the year 2011 and since then, origami has become a means of relief for me. This “seemingly childish” 
+          (what most people like to call it) pastime has opened my mind to simple truth; that failure and disappointment 
+          can be folded away if I learn from them and grow - that it is important to face obstacles to understand oneself.
+          <br><br>
+          Think about it, what do we usually do when things don’t go our way? WE FOLD! We give in for the moment, for 
+          that particular deal, like in a game of cards. That is why I fold paper as hobby – the beauty of a new 
+          beginning, the possibilities are infinite. Through the valleys and mountains of the folds, all that matters 
+          is the puzzle of folding and assembling. Engrossed in the process, the mind breathes like freshly spaded 
+          garden and the soul ironically unfolds. Nothing seems like a waste. It’s a form of meditation. It’s powerful, 
+          the attempt to create something with one’s bare hands.
+          <br><br>
+          <b><i>[Origami (折り紙, Japanese pronunciation: [oɾiɡami] or [oɾiꜜɡami], from ori meaning "folding", and kami 
+          meaning "paper" (kami changes to gami due to rendaku) is the art of paper folding, which is often associated 
+          with Japanese culture. In modern usage, the word "origami" is used as an inclusive term for all folding 
+          practices, regardless of their culture of origin.]</i></b>
+          <br><br>
+          My forte is 3D Origami, also called Golden Venture Origami, a type of Modular Origami. Here, paper measuring 
+          3cm*5cm is folded into a simple triangular unit. Thousands of these units are inserted into one another to 
+          create elaborate sculptures. The number of units needed depends on the level of complexity and the size of 
+          the model. Typically, it would take 1,600 to 2,000 units to make a swan of 6 to 7 inches in height. So far, 
+          the highest number I have used to finish a model is 17,000 paper triangle units.
+          <br><br>
+          Besides regular 3d Origami models, I design 3d Origami figurines of people/Gods and Goddesses, and their 
+          stories told with paper art have been successful across online and print. My 3d Origami models and figurines 
+          have been displayed at the art exhibition at the Embassy of Japan, Nepal (2019). 
+          <br><br>
+          It is quite simple in its approach; tools: hands, medium: paper. Yet, a world of artistic expression lies 
+          within the humble confines of sheets of paper, triangles of papers. Origami and its branches are a great 
+          stress buster - folding and assembling models is soothing. The sense of accomplishment is immensely 
+          satisfying and certainly a lot of fun. 3d Origami has taught me to be compassionate and patient. 
+          Every new project, new model, new figurine is a new opportunity to light a spark.
+          <br><br>
+          The wisdom of paper is in its simplicity. While the simple mountain-valley folds look beautiful, the art 
+          gets infinitely more complex when a living form - human being is represented with sheets and triangles of 
+          paper. From folding paper in all isolation to folding for a community of 3d Origami enthusiasts; from 
+          assembling palm-sized models to folding almost 3 feet tall figurines; it’s been a long, eventful and 
+          thoroughly enjoyable journey. In particular, over the years I have developed my own style of 3d Origami and 
+          expressive 3d Origami Figurines.
+          <br><br>
+          My 3d Origami art page, “The Origami Guy” is a homage to the ancient art of paper folding. I hope my work 
+          will give you a glimpse of how I see the world. I want you to see the simple beauty and elegance of the 
+          models and also think about how the shapes are constructed from thousands of paper triangles.
+          <br><br>
+          Have fun going through my musings and original figurines!
+          <br><br>
+				</p>
+      </section> <!--section closed-->
+    </div> <!--wrapper div closed-->
+    <footer>
+     
+      <div id="inner-footer">
+       
+        <div class="footer-contents">
+         
+          <div class="footer-left-resp">
+            <p class="left-footer-cont">
+              Contact Me<br><br>
+              Saugat Rajbhandari<br>
+              Kathmandu, NEPAL<br><br>
+              Tel: +977-9876543210<br><br>
+              theorigamiguy@gmail.com<br><br>
+              Connect with me:<br>
+              <img src="images/fb-icon.png" alt="facebook icon">
+              <img src="images/insta-icon.png" alt="instagram icon">
+              <img src="images/twitter-icon.png" alt="twitter icon">
+            </p>  
+
+
+            <p class="mid-footer-cont">
+              Coded Using<br><br>
+              HTML 5<br>
+              CSS 3<br>
+              CSS Transitions<br>
+              CSS Transforms<br>
+              CSS Animations<br>
+              HTML Validator<br>
+              CSS Validator
+            </p>  
+          </div>
+
+          <div class="footer-right-resp">
+            <p class="right-footer-cont">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d528.9750958167673!2d85.34364104862699!3d27.65777200636032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb175804d46333%3A0x407a3f6860e99df2!2sImadol%2C%20Mahalaxmi%2C%20Nepal!5e0!3m2!1sen!2sca!4v1682186093481!5m2!1sen!2sca" 
+                      style="border:0;" 
+                      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>  
+          </div>
+
+        </div>
+
+        <div class="footer-right"></div>
+
+        <div id="last_modified">
+          <script>
+            document.scripts[document.scripts.length-1].parentNode.innerHTML = "Last Modified: " + document.lastModified;
+          </script>
+        </div>
+      </div><!--End of inner-footer-->  
+      
+      <div class="footer-copyright">
+        <div id="inner-copyright"> <!--inner footer opened-->
+          <p>
+            <sup>&copy;</sup>Copyright 2023. &nbsp;The Origami Guy. &nbsp;All Rights Reserved
+          </p> 
+        </div> <!--inner copyright closed--> 
+      </div> <!--footer-copyright closed-->
+
+    </footer>
+  </body> <!--body closed-->
+</html>

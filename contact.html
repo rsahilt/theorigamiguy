@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    
+    <!--meta tag for device responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Capstone Project</title>
+    
+    <!--link to css styslesheet-->
+    <link rel="stylesheet" type="text/css" href="styles/desktop.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    
+
+<!--    links for google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Lato:wght@400&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+      .form-div{
+        background-image: url(images/formimg.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+    </style>
+  </head>
+  
+  <!--                     (^_^)
+  /////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\             
+  //////////////////////////   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\                                                        //
+  //               Submitted By: Sahil Rajbhandari          \\
+  \\               Tutor: Brent Scott                       //
+  //               Final Project - HTML CAPSTONE PROJECT    \\
+  \\               Due Date: MAY 9, 2023                    //
+  //                                                        \\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\   //////////////////////////////
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\ /////////////////////////////// 
+  -->    
+  
+  <body>
+    <header> <!--a child class within the header which is of 960px-->
+     
+      <div id="inner-header">
+       
+        <div id="logo"> <!--div for logo and the title-->
+         
+          <div id="logo-img"> <!--div containing image of the page-->
+              <!--logo that appers on desktop and ipad version-->
+<!--
+              <img src="images/logonobg1.png" 
+                   alt="The origami guy logo" 
+                   title="Website Logo"> 
+-->
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/logo-768.png" 
+                      width="90" 
+                      height="90"
+                      >
+                      
+              <img src="images/logonobg1.png" 
+                   width="125" 
+                   height="125" 
+                   alt="website logo">
+            </picture>      
+            
+          </div> <!--div containing the image is closed-->                                                                     
+          
+          
+          <div id="logo-text"> <!--div containing the title text-->
+            <span> <!--text-->
+              THE<br>
+              ORIGAMI<br>
+              GUY<br>
+            </span> <!--end if text/span-->
+          </div> <!--div containing the title text is closed-->
+          
+        </div> <!--div for the logo and the text is closed-->
+        
+        <nav>
+          <div class="hamburger">
+            <!--image of hamburger is used-->
+          <!--<img src="images/hamburger.png" alt="hamburger icon">-->
+            <div class="bar bartop"></div>
+            <div class="bar barmid"></div>
+            <div class="bar barbottom"></div>
+          </div> <!--hamburger menu closed-->
+
+          <ul> <!--unordered list with links are created-->
+            <li><a href="index.html"  title="Home">Home</a></li> <!--class used to specify the opened page-->
+            <li><a href="about.html" title="About">About</a></li>
+            <li><a href="media.html" title="Media">Media</a></li>
+            <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+            <li><a href="contact.html" class="active" title="Contact Us">Contact Us</a></li>
+          </ul> <!--end of navigation lists-->
+        </nav> <!--nav element closed-->
+        
+      </div><!--End of inner header-->
+      
+    </header> <!--header with width 960px is closed--> 
+    <!--wrapper div that contains the whole webpage-->
+    <div id="wrapper">
+      
+      <section> <!--section begins here-->
+       
+        <div class="content-form">
+          <div class="image-envelope">
+            <img src="images/mailicon.jpg" 
+                 width="200"
+                 height="155" 
+                 alt="envelope icon">
+          </div>
+          <div class="form-div">
+          <h1 style="text-align: left" class="removemargin">Get In Touch</h1>
+            <form action="http://www.scott-media.com/test/form_display.php" 
+                  method="post"
+                  id="credentials-form">
+                  
+                <p>
+                  <label for="fullname">Full name</label><br>
+                  <input type="text" 
+                         id="fullname" 
+                         name="fullname" 
+                         placeholder="Full name"
+                         title="Type in your full name"
+                         minlength="1"
+                         maxlength="60"
+                         required
+                         class="activelabel">
+                </p>
+                
+                <p>
+                  <label for="username">Username</label><br>
+                  <input type="text" 
+                         id="username" 
+                         name="username" 
+                         placeholder="Username"
+                         title="Type in your username"
+                         minlength="1"
+                         maxlength="20"
+                         required
+                         class="activelabel">
+                </p>
+                
+                <p>
+                  <label for="passwd">Password</label><br>
+                  <input type="password" 
+                         id="passwd" 
+                         name="passwd" 
+                         placeholder="Password"
+                         title="Type in your password"
+                         minlength="8"
+                         maxlength="32"
+                         required
+                         class="activelabel">
+                </p>
+                
+                <p>
+                  <label for="emailid">Email</label><br>
+                  <input type="email" 
+                         id="emailid" 
+                         name="emailid"  
+                         placeholder="Email"
+                         title="Type in your email address"
+                         class="activelabel"
+                         required>
+                </p>   
+                   
+                <p>
+                  <label for="telephone">Telephone</label><br>
+                  <input type="tel" 
+                         id="telephone" 
+                         name="telephone"  
+                         placeholder="Telephone"
+                         title="Type in your telephone number"
+                         class="activelabel"
+                         required>
+                </p>   
+                
+                <p>
+                  <label for="message">Message</label> 
+                  <textarea name="message" 
+                            id="message" 
+                            cols="39" 
+                            rows="7"
+                            placeholder="Message" 
+                            class="activelabel"
+                            required
+                            minlength="1"  
+                            maxlength="500"  
+                            ></textarea>
+                </p>     
+                    
+              <input type="reset" id="clear" name="clear" value="Clear" title="Click to clear the form fields">           
+              <input type="submit" id="send" name="send" value="Send" title="Click to send message to the artist">           
+            </form> 
+            
+
+            
+          </div>
+        </div>
+        
+      </section> <!--section closed-->
+      
+    </div> <!--wrapper div closed-->
+    
+    <footer>
+     
+      <div id="inner-footer">
+       
+        <div class="footer-contents">
+         
+          <div class="footer-left-resp">
+            <p class="left-footer-cont">
+              Contact Me<br><br>
+              Saugat Rajbhandari<br>
+              Kathmandu, NEPAL<br><br>
+              Tel: +977-9876543210<br><br>
+              theorigamiguy@gmail.com<br><br>
+              Connect with me:<br>
+              <img src="images/fb-icon.png" alt="facebook icon">
+              <img src="images/insta-icon.png" alt="instagram icon">
+              <img src="images/twitter-icon.png" alt="twitter icon">
+            </p>  
+
+
+            <p class="mid-footer-cont">
+              Coded Using<br><br>
+              HTML 5<br>
+              CSS 3<br>
+              CSS Transitions<br>
+              CSS Transforms<br>
+              CSS Animations<br>
+              HTML Validator<br>
+              CSS Validator
+            </p>  
+          </div>
+
+          <div class="footer-right-resp">
+            <p class="right-footer-cont">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d528.9750958167673!2d85.34364104862699!3d27.65777200636032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb175804d46333%3A0x407a3f6860e99df2!2sImadol%2C%20Mahalaxmi%2C%20Nepal!5e0!3m2!1sen!2sca!4v1682186093481!5m2!1sen!2sca" 
+                      style="border:0;" 
+                      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>  
+          </div>
+
+        </div>
+
+        <div class="footer-right"></div>
+
+        <div id="last_modified">
+          <script>
+            document.scripts[document.scripts.length-1].parentNode.innerHTML = "Last Modified: " + document.lastModified;
+          </script>
+        </div>
+
+      </div><!--End of inner-footer--> 
+      
+      <div class="footer-copyright">
+        <div id="inner-copyright"> <!--inner footer opened-->
+          <p>
+            <sup>&copy;</sup>Copyright 2023. &nbsp;The Origami Guy. &nbsp;All Rights Reserved
+          </p> 
+        </div> <!--inner copyright closed--> 
+      </div> <!--footer-copyright closed-->  
+      
+    </footer>
+  </body> <!--body closed-->
+</html>
