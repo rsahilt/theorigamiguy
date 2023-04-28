@@ -26,31 +26,30 @@ MEDIA QUERIES FOR RESPONSIVENESS
 
 @media screen and (max-width: 768px){
   header{
-    height: 90px;
-  }
-  
-  #wrapper{
-    padding-top: 90px;
+    height: 110px;
   }
   
   #logo{
     width:300px;
+    margin-top: 7px;
   }
   
   #logo-img{
     width: 90px;
     margin-right: 0;
     padding-right: 0;
+    margin-top:4px;
   }
   
   #logo-text{
     width: 175px;
     margin-left: 0;
     padding-left: 0;
+    margin-top: -1px;
   }
   
   header #logo-text span{
-    font-size: 1.4em;
+    font-size: 1.7em;
     margin-left: 0;
     padding-left: 0;
   }
@@ -58,7 +57,6 @@ MEDIA QUERIES FOR RESPONSIVENESS
   blockquote{
     margin: 5px 10px 5px 10px;
   }
- 
 }
 
 
@@ -161,7 +159,7 @@ MEDIA QUERIES FOR RESPONSIVENESS
     float: right;
     position: absolute;
     z-index: 11;
-    left: 90%;
+    left: 88%;
     top: -90px;
   }
   
